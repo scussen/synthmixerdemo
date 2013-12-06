@@ -21,6 +21,9 @@
 		4203821B18515B8300EAA44C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420381FD18515B8300EAA44C /* UIKit.framework */; };
 		4203822318515B8300EAA44C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4203822118515B8300EAA44C /* InfoPlist.strings */; };
 		4203822518515B8300EAA44C /* SynthMixDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203822418515B8300EAA44C /* SynthMixDemoTests.m */; };
+		4203823018515E3600EAA44C /* SCAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203822F18515E3600EAA44C /* SCAudioController.m */; };
+		4203823218515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 4203823118515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 */; };
+		4203823518515F7F00EAA44C /* SCSynthMixerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203823418515F7F00EAA44C /* SCSynthMixerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		4203822018515B8300EAA44C /* SynthMixDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SynthMixDemoTests-Info.plist"; sourceTree = "<group>"; };
 		4203822218515B8300EAA44C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4203822418515B8300EAA44C /* SynthMixDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynthMixDemoTests.m; sourceTree = "<group>"; };
+		4203822E18515E3600EAA44C /* SCAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAudioController.h; sourceTree = "<group>"; };
+		4203822F18515E3600EAA44C /* SCAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAudioController.m; sourceTree = "<group>"; };
+		4203823118515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GUGS_Fluid_v1_44.sf2; sourceTree = "<group>"; };
+		4203823318515F7F00EAA44C /* SCSynthMixerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSynthMixerViewController.h; sourceTree = "<group>"; };
+		4203823418515F7F00EAA44C /* SCSynthMixerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSynthMixerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +120,16 @@
 		420381FF18515B8300EAA44C /* SynthMixDemo */ = {
 			isa = PBXGroup;
 			children = (
+				42038236185176A000EAA44C /* Sount Fonts */,
 				4203820818515B8300EAA44C /* SCAppDelegate.h */,
 				4203820918515B8300EAA44C /* SCAppDelegate.m */,
 				4203820B18515B8300EAA44C /* Main.storyboard */,
 				4203820E18515B8300EAA44C /* SCViewController.h */,
 				4203820F18515B8300EAA44C /* SCViewController.m */,
+				4203823318515F7F00EAA44C /* SCSynthMixerViewController.h */,
+				4203823418515F7F00EAA44C /* SCSynthMixerViewController.m */,
+				4203822E18515E3600EAA44C /* SCAudioController.h */,
+				4203822F18515E3600EAA44C /* SCAudioController.m */,
 				4203821118515B8300EAA44C /* Images.xcassets */,
 				4203820018515B8300EAA44C /* Supporting Files */,
 			);
@@ -150,6 +163,14 @@
 				4203822118515B8300EAA44C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42038236185176A000EAA44C /* Sount Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4203823118515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 */,
+			);
+			name = "Sount Fonts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +253,7 @@
 				4203821218515B8300EAA44C /* Images.xcassets in Resources */,
 				4203820418515B8300EAA44C /* InfoPlist.strings in Resources */,
 				4203820D18515B8300EAA44C /* Main.storyboard in Resources */,
+				4203823218515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +274,8 @@
 			files = (
 				4203820A18515B8300EAA44C /* SCAppDelegate.m in Sources */,
 				4203821018515B8300EAA44C /* SCViewController.m in Sources */,
+				4203823018515E3600EAA44C /* SCAudioController.m in Sources */,
+				4203823518515F7F00EAA44C /* SCSynthMixerViewController.m in Sources */,
 				4203820618515B8300EAA44C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
