@@ -13,6 +13,11 @@
 
 @interface SCSynthMixerViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel  *currentPresetLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pitchAdjustmentValue;
+@property (weak, nonatomic) IBOutlet UILabel *bus1PresetName;
+@property (weak, nonatomic) IBOutlet UILabel *bus2PresetName;
+
 - (IBAction) startPlayLowNote:(id)sender;
 - (IBAction) stopPlayLowNote:(id)sender;
 - (IBAction) startPlayMidNote:(id)sender;
@@ -20,7 +25,14 @@
 - (IBAction) startPlayHighNote:(id)sender;
 - (IBAction) stopPlayHighNote:(id)sender;
 - (IBAction) pitchAdjustmentChanged:(id)sender;
-- (IBAction) mixerBusInputSelect:(id)sender;
+
+
+- (IBAction)toggleBus1:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *bus1Button;
+
+- (IBAction)toggleBus2:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *bus2Button;
+
 
 
 @end

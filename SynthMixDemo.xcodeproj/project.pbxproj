@@ -14,7 +14,6 @@
 		4203820618515B8300EAA44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203820518515B8300EAA44C /* main.m */; };
 		4203820A18515B8300EAA44C /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203820918515B8300EAA44C /* SCAppDelegate.m */; };
 		4203820D18515B8300EAA44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4203820B18515B8300EAA44C /* Main.storyboard */; };
-		4203821018515B8300EAA44C /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203820F18515B8300EAA44C /* SCViewController.m */; };
 		4203821218515B8300EAA44C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4203821118515B8300EAA44C /* Images.xcassets */; };
 		4203821918515B8300EAA44C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4203821818515B8300EAA44C /* XCTest.framework */; };
 		4203821A18515B8300EAA44C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420381F918515B8300EAA44C /* Foundation.framework */; };
@@ -24,6 +23,8 @@
 		4203823018515E3600EAA44C /* SCAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203822F18515E3600EAA44C /* SCAudioController.m */; };
 		4203823218515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 4203823118515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 */; };
 		4203823518515F7F00EAA44C /* SCSynthMixerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203823418515F7F00EAA44C /* SCSynthMixerViewController.m */; };
+		42D660D71851ACA0004B23FF /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D660D61851ACA0004B23FF /* off.png */; };
+		42D660D91851ACA8004B23FF /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D660D81851ACA8004B23FF /* on.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		420381F618515B8300EAA44C /* SynthMixDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynthMixDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		420381F618515B8300EAA44C /* SynthMixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynthMixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		420381F918515B8300EAA44C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		420381FB18515B8300EAA44C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		420381FD18515B8300EAA44C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -48,8 +49,6 @@
 		4203820818515B8300EAA44C /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
 		4203820918515B8300EAA44C /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
 		4203820C18515B8300EAA44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4203820E18515B8300EAA44C /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
-		4203820F18515B8300EAA44C /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
 		4203821118515B8300EAA44C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4203821718515B8300EAA44C /* SynthMixDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynthMixDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4203821818515B8300EAA44C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,6 +60,8 @@
 		4203823118515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GUGS_Fluid_v1_44.sf2; sourceTree = "<group>"; };
 		4203823318515F7F00EAA44C /* SCSynthMixerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSynthMixerViewController.h; sourceTree = "<group>"; };
 		4203823418515F7F00EAA44C /* SCSynthMixerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSynthMixerViewController.m; sourceTree = "<group>"; };
+		42D660D61851ACA0004B23FF /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		42D660D81851ACA8004B23FF /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +101,7 @@
 		420381F718515B8300EAA44C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				420381F618515B8300EAA44C /* SynthMixDemo.app */,
+				420381F618515B8300EAA44C /* SynthMixer.app */,
 				4203821718515B8300EAA44C /* SynthMixDemoTests.xctest */,
 			);
 			name = Products;
@@ -123,9 +124,9 @@
 				42038236185176A000EAA44C /* Sount Fonts */,
 				4203820818515B8300EAA44C /* SCAppDelegate.h */,
 				4203820918515B8300EAA44C /* SCAppDelegate.m */,
+				42D660D61851ACA0004B23FF /* off.png */,
+				42D660D81851ACA8004B23FF /* on.png */,
 				4203820B18515B8300EAA44C /* Main.storyboard */,
-				4203820E18515B8300EAA44C /* SCViewController.h */,
-				4203820F18515B8300EAA44C /* SCViewController.m */,
 				4203823318515F7F00EAA44C /* SCSynthMixerViewController.h */,
 				4203823418515F7F00EAA44C /* SCSynthMixerViewController.m */,
 				4203822E18515E3600EAA44C /* SCAudioController.h */,
@@ -190,7 +191,7 @@
 			);
 			name = SynthMixDemo;
 			productName = SynthMixDemo;
-			productReference = 420381F618515B8300EAA44C /* SynthMixDemo.app */;
+			productReference = 420381F618515B8300EAA44C /* SynthMixer.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4203821618515B8300EAA44C /* SynthMixDemoTests */ = {
@@ -252,7 +253,9 @@
 			files = (
 				4203821218515B8300EAA44C /* Images.xcassets in Resources */,
 				4203820418515B8300EAA44C /* InfoPlist.strings in Resources */,
+				42D660D71851ACA0004B23FF /* off.png in Resources */,
 				4203820D18515B8300EAA44C /* Main.storyboard in Resources */,
+				42D660D91851ACA8004B23FF /* on.png in Resources */,
 				4203823218515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4203820A18515B8300EAA44C /* SCAppDelegate.m in Sources */,
-				4203821018515B8300EAA44C /* SCViewController.m in Sources */,
 				4203823018515E3600EAA44C /* SCAudioController.m in Sources */,
 				4203823518515F7F00EAA44C /* SCSynthMixerViewController.m in Sources */,
 				4203820618515B8300EAA44C /* main.m in Sources */,
@@ -406,7 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SynthMixDemo/SynthMixDemo-Prefix.pch";
 				INFOPLIST_FILE = "SynthMixDemo/SynthMixDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SynthMixer;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -419,7 +421,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SynthMixDemo/SynthMixDemo-Prefix.pch";
 				INFOPLIST_FILE = "SynthMixDemo/SynthMixDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SynthMixer;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -485,6 +487,7 @@
 				4203822A18515B8300EAA44C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4203822B18515B8300EAA44C /* Build configuration list for PBXNativeTarget "SynthMixDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +496,7 @@
 				4203822D18515B8300EAA44C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

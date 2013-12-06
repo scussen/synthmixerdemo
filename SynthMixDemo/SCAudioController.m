@@ -43,6 +43,18 @@
     self.bus2IsOn = YES;
 }
 
+- (int) pitchAdj:(int)pitchValue {
+    OSStatus result = AudioUnitSetParameter (
+                                             _pitchEffectUnit,
+                                             kNewTimePitchParam_Pitch,
+                                             kAudioUnitScope_Global,
+                                             0,
+                                             pitchValue,
+                                             0
+                                             );
+    return (int) result;
+}
+
 #pragma mark -
 #pragma mark Audio setup
 
@@ -75,7 +87,6 @@
 	result = AUGraphAddNode (self.processingGraph, &cd, &samplerNode2);
     if (result != noErr) NSLog (@"Unable to add the Sampler unit 2 to the audio processing graph. Error code: %d", (int) result);
     
-    //............................................................................
     // Add the Effects unit node to the graph
     // AUTime Pitch Effect Unit
     AudioComponentDescription EffectsUnitDescription = {0};
@@ -89,9 +100,8 @@
                                 &pitchEffectNode);
     if (result != noErr) NSLog (@"Unable to add the Effect Node [time/pitch] to the audio processing graph. Error code: %d", (int) result);
     
-    //............................................................................
+
     // Add the Mixer unit node to the graph
-    
     // Multichannel mixer unit
     AudioComponentDescription MixerUnitDescription;
     MixerUnitDescription.componentType          = kAudioUnitType_Mixer;
@@ -107,7 +117,6 @@
                                 );
     if (result != noErr) NSLog (@"Unable to add the Mixer unit to the audio processing graph. Error code: %d", (int) result);
     
-    //............................................................................
 	// Specify the Output unit, to be used as the 4th and final node of the graph
 	cd.componentType = kAudioUnitType_Output;
 	cd.componentSubType = kAudioUnitSubType_RemoteIO;
@@ -120,7 +129,6 @@
 	result = AUGraphOpen (self.processingGraph);
     if (result != noErr) NSLog (@"Unable to open the audio processing graph. Error code: %d", (int) result);
 
-    //............................................................................
     // Obtain the mixer unit instance from its corresponding node.
     
     result =    AUGraphNodeInfo (
@@ -131,7 +139,6 @@
                                  );
     if (result != noErr) NSLog (@"AUGraphNodeInfo on Mixer. Error code: %d", (int) result);
     
-    //............................................................................
     // Multichannel Mixer unit Setup
     
     UInt32 busCount   = 2;    // bus count for mixer unit input
@@ -149,11 +156,7 @@
                                    );
     if (result != noErr) NSLog (@"AudioUnitSetProperty (set mixer unit bus count). Error code: %d", (int) result);
     
-    //............................................................................
-    //------------------
     // Connect the nodes
-    //------------------
-    
     AUGraphConnectNodeInput (self.processingGraph, samplerNode, 0, mixerNode, 0);
     if (result != noErr) NSLog (@"Unable to interconnect the sampler node to the mixer node in the audio processing graph. Error code: %d", (int) result);
     // connect the sample node 2 to the effects unit

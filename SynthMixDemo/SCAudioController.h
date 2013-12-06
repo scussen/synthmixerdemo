@@ -16,4 +16,5 @@
 @property (readwrite)  BOOL bus2IsOn;
 
 - (void) setupAudio;
+- (int) pitchAdj: (int) pitchValue;
 @end
