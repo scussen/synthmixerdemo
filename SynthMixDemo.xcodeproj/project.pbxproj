@@ -122,11 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				42038236185176A000EAA44C /* Sount Fonts */,
-				4203820818515B8300EAA44C /* SCAppDelegate.h */,
-				4203820918515B8300EAA44C /* SCAppDelegate.m */,
 				42D660D61851ACA0004B23FF /* off.png */,
 				42D660D81851ACA8004B23FF /* on.png */,
 				4203820B18515B8300EAA44C /* Main.storyboard */,
+				4203820818515B8300EAA44C /* SCAppDelegate.h */,
+				4203820918515B8300EAA44C /* SCAppDelegate.m */,
 				4203823318515F7F00EAA44C /* SCSynthMixerViewController.h */,
 				4203823418515F7F00EAA44C /* SCSynthMixerViewController.m */,
 				4203822E18515E3600EAA44C /* SCAudioController.h */,

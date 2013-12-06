@@ -147,31 +147,15 @@ enum {
 - (IBAction)pitchAdjustmentChanged:(id)sender {
     UISlider *slider = (UISlider *)sender;
     int pitchAdj = (int)roundf(slider.value);
+    if (abs(pitchAdj) <= 5 ) {
+        pitchAdj = 0;
+    }
     NSLog(@"Pitch adjustment value = %d", pitchAdj);
     _pitchAdjustmentValue.text = [NSString stringWithFormat:@"%d", pitchAdj];
     int result = [ssAudio pitchAdj:pitchAdj];
 
     if(result != 0) NSLog (@"Unable to set the property pitch adjustment parameter on the effects unit. Error code: %d\n", (int) result);
 }
-
-//- (IBAction)mixerBusInputSelect:(id)sender {
-//    
-//    if ([sender selectedSegmentIndex] == 0){
-//        ssAudio.bus1IsOn = YES;
-//        ssAudio.bus2IsOn = NO;
-//        NSLog(@"Mixer Bus 1 Selected");
-//    }
-//    if ([sender selectedSegmentIndex] == 1){
-//        ssAudio.bus1IsOn = NO;
-//        ssAudio.bus2IsOn = YES;
-//        NSLog(@"Mixer Bus 2 Selected");
-//    }
-//    if ([sender selectedSegmentIndex] == 2){
-//        ssAudio.bus1IsOn = YES;
-//        ssAudio.bus2IsOn = YES;
-//        NSLog(@"Mixer Bus 1 & Bus 2 Selected");
-//    }
-//}
 
 - (IBAction)toggleBus1:(id)sender {
     ssAudio.bus1IsOn = !ssAudio.bus1IsOn;
@@ -181,7 +165,7 @@ enum {
 
 - (IBAction)toggleBus2:(id)sender {
     ssAudio.bus2IsOn = !ssAudio.bus2IsOn;
-    if (ssAudio.bus1IsOn) _bus2Button.selected = YES;
+    if (ssAudio.bus2IsOn) _bus2Button.selected = YES;
     else _bus2Button.selected = NO;
 }
 
