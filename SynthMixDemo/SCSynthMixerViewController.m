@@ -15,6 +15,9 @@ enum {
 	kMIDIMessage_NoteOff   = 0x8,
 };
 
+enum{lowNote, midNote, highNote};
+
+// define some midi notes to play - middle C (60), C one octave below (48) and C one octave above (72)
 #define kLowNote  48
 #define kMidNote  60
 #define kHighNote 72
@@ -25,22 +28,6 @@ enum {
 
 @implementation SCSynthMixerViewController
 @synthesize ssAudio;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void) viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    self.view.tintColor = [UIColor greenColor];
-    [[UINavigationBar appearance]  setTintColor:[UIColor greenColor]];
-}
-
 
 - (void)viewDidLoad
 {
@@ -75,9 +62,27 @@ enum {
 
 #pragma mark -
 #pragma mark Audio control
-// Play the low note
-- (IBAction) startPlayLowNote:(id)sender {
-	UInt32 noteNum = kLowNote;
+
+// Start the note play
+- (IBAction) startPlayNote:(id)sender {
+    UIButton *button = (UIButton*) sender;
+    UInt32 noteNum;
+    
+    switch(button.tag) {
+        case lowNote:
+            noteNum = kLowNote;
+            break;
+        case midNote:
+            noteNum = kMidNote;
+            break;
+        case highNote:
+            noteNum = kHighNote;
+            break;
+        default:
+            noteNum = kMidNote;
+            break;
+    }
+    
 	UInt32 onVelocity = 127;
 	UInt32 noteCommand = 	kMIDIMessage_NoteOn << 4 | 0;
     OSStatus result = noErr;
@@ -87,55 +92,26 @@ enum {
     if (result != noErr) NSLog (@"Unable to start playing the note on samplerUnit2. Error code: %d\n", (int) result);
 }
 
-// Stop the low note
-- (IBAction) stopPlayLowNote:(id)sender {
-	UInt32 noteNum = kLowNote;
-	UInt32 noteCommand = 	kMIDIMessage_NoteOff << 4 | 0;
-    OSStatus result = noErr;
-	if(ssAudio.bus1IsOn) result = MusicDeviceMIDIEvent(ssAudio.samplerUnit, noteCommand, noteNum, 0, 0);
-    if (result != noErr) NSLog (@"Unable to stop playing the note on samplerUnit. Error code: %d\n", (int) result);
-	if(ssAudio.bus2IsOn) result = MusicDeviceMIDIEvent(ssAudio.samplerUnit2, noteCommand, noteNum, 0, 0);
-    if (result != noErr) NSLog (@"Unable to stop playing the note on samplerUnit2. Error code: %d\n", (int) result);
-}
+// Stop the note play
+- (IBAction) stopPlayNote:(id)sender {
+    UIButton *button = (UIButton*) sender;
+    UInt32 noteNum;
+    
+    switch(button.tag) {
+        case lowNote:
+            noteNum = kLowNote;
+            break;
+        case midNote:
+            noteNum = kMidNote;
+            break;
+        case highNote:
+            noteNum = kHighNote;
+            break;
+        default:
+            noteNum = kMidNote;
+            break;
+    }
 
-// Play the mid note
-- (IBAction) startPlayMidNote:(id)sender {
-	UInt32 noteNum = kMidNote;
-	UInt32 onVelocity = 127;
-	UInt32 noteCommand = 	kMIDIMessage_NoteOn << 4 | 0;
-    OSStatus result = noErr;
-	if(ssAudio.bus1IsOn) result = MusicDeviceMIDIEvent(ssAudio.samplerUnit, noteCommand, noteNum, onVelocity, 0);
-    if (result != noErr) NSLog (@"Unable to start playing the note on samplerUnit. Error code: %d\n", (int) result);
-    if(ssAudio.bus2IsOn) result = MusicDeviceMIDIEvent(ssAudio.samplerUnit2, noteCommand, noteNum, onVelocity, 0);
-    if (result != noErr) NSLog (@"Unable to start playing the note on samplerUnit2. Error code: %d\n", (int) result);
-}
-
-// Stop the mid note
-- (IBAction) stopPlayMidNote:(id)sender {
-	UInt32 noteNum = kMidNote;
-	UInt32 noteCommand = 	kMIDIMessage_NoteOff << 4 | 0;
-    OSStatus result = noErr;
-	if(ssAudio.bus1IsOn) result = MusicDeviceMIDIEvent(ssAudio.samplerUnit, noteCommand, noteNum, 0, 0);
-    if (result != noErr) NSLog (@"Unable to stop playing the note on samplerUnit. Error code: %d\n", (int) result);
-	if(ssAudio.bus2IsOn) result = MusicDeviceMIDIEvent(ssAudio.samplerUnit2, noteCommand, noteNum, 0, 0);
-    if (result != noErr) NSLog (@"Unable to stop playing the note on samplerUnit2. Error code: %d\n", (int) result);
-}
-
-// Play the high note
-- (IBAction) startPlayHighNote:(id)sender {
-	UInt32 noteNum = kHighNote;
-	UInt32 onVelocity = 127;
-	UInt32 noteCommand = 	kMIDIMessage_NoteOn << 4 | 0;
-    OSStatus result = noErr;
-	if(ssAudio.bus1IsOn) result = MusicDeviceMIDIEvent(ssAudio.samplerUnit, noteCommand, noteNum, onVelocity, 0);
-    if (result != noErr) NSLog (@"Unable to start playing the note on samplerUnit. Error code: %d\n", (int) result);
-    if(ssAudio.bus2IsOn) result = MusicDeviceMIDIEvent(ssAudio.samplerUnit2, noteCommand, noteNum, onVelocity, 0);
-    if (result != noErr) NSLog (@"Unable to start playing the note on samplerUnit2. Error code: %d\n", (int) result);
-}
-
-// Stop the high note
-- (IBAction)stopPlayHighNote:(id)sender {
-	UInt32 noteNum = kHighNote;
 	UInt32 noteCommand = 	kMIDIMessage_NoteOff << 4 | 0;
     OSStatus result = noErr;
 	if(ssAudio.bus1IsOn) result = MusicDeviceMIDIEvent(ssAudio.samplerUnit, noteCommand, noteNum, 0, 0);
@@ -168,5 +144,6 @@ enum {
     if (ssAudio.bus2IsOn) _bus2Button.selected = YES;
     else _bus2Button.selected = NO;
 }
+
 
 @end

@@ -64,10 +64,10 @@
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startPlayLowNote:" destination="h6q-W2-qEQ" eventType="touchDragEnter" id="I4G-OZ-1MW"/>
-                                    <action selector="startPlayLowNote:" destination="h6q-W2-qEQ" eventType="touchDown" id="Skl-e5-PG3"/>
-                                    <action selector="stopPlayLowNote:" destination="h6q-W2-qEQ" eventType="touchUpInside" id="SHo-eX-Sp8"/>
-                                    <action selector="stopPlayLowNote:" destination="h6q-W2-qEQ" eventType="touchDragExit" id="ZLa-tN-Klu"/>
+                                    <action selector="startPlayNote:" destination="h6q-W2-qEQ" eventType="touchDown" id="Buh-cd-A6E"/>
+                                    <action selector="startPlayNote:" destination="h6q-W2-qEQ" eventType="touchDragEnter" id="vHr-YD-gA3"/>
+                                    <action selector="stopPlayNote:" destination="h6q-W2-qEQ" eventType="touchDragExit" id="Vt9-fs-yAn"/>
+                                    <action selector="stopPlayNote:" destination="h6q-W2-qEQ" eventType="touchUpInside" id="edI-Tu-vfB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AW-RG-jAd">
@@ -78,10 +78,10 @@
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startPlayMidNote:" destination="h6q-W2-qEQ" eventType="touchDown" id="Gob-r4-BhI"/>
-                                    <action selector="startPlayMidNote:" destination="h6q-W2-qEQ" eventType="touchDragEnter" id="rBp-W5-ovz"/>
-                                    <action selector="stopPlayMidNote:" destination="h6q-W2-qEQ" eventType="touchDragExit" id="6JW-h2-k2s"/>
-                                    <action selector="stopPlayMidNote:" destination="h6q-W2-qEQ" eventType="touchUpInside" id="O9g-6g-Z6j"/>
+                                    <action selector="startPlayNote:" destination="h6q-W2-qEQ" eventType="touchDragEnter" id="NNB-C7-mzI"/>
+                                    <action selector="startPlayNote:" destination="h6q-W2-qEQ" eventType="touchDown" id="Xcs-Lh-zE9"/>
+                                    <action selector="stopPlayNote:" destination="h6q-W2-qEQ" eventType="touchDragExit" id="QMV-U9-BoS"/>
+                                    <action selector="stopPlayNote:" destination="h6q-W2-qEQ" eventType="touchUpInside" id="wew-K3-1gm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpV-F1-SvF">
@@ -93,10 +93,10 @@
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startPlayHighNote:" destination="h6q-W2-qEQ" eventType="touchDragEnter" id="4lf-mY-L5V"/>
-                                    <action selector="startPlayHighNote:" destination="h6q-W2-qEQ" eventType="touchDown" id="7e8-fr-bMV"/>
-                                    <action selector="stopPlayHighNote:" destination="h6q-W2-qEQ" eventType="touchUpInside" id="jLh-xB-MXO"/>
-                                    <action selector="stopPlayHighNote:" destination="h6q-W2-qEQ" eventType="touchDragExit" id="m9U-q8-qs3"/>
+                                    <action selector="startPlayNote:" destination="h6q-W2-qEQ" eventType="touchDragEnter" id="3C2-Zn-HRr"/>
+                                    <action selector="startPlayNote:" destination="h6q-W2-qEQ" eventType="touchDown" id="I0d-Ye-iYL"/>
+                                    <action selector="stopPlayNote:" destination="h6q-W2-qEQ" eventType="touchUpInside" id="h4D-Ob-2yN"/>
+                                    <action selector="stopPlayNote:" destination="h6q-W2-qEQ" eventType="touchDragExit" id="hiS-c3-O1O"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Eat-qd-5Hf">
@@ -179,13 +179,13 @@
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startPlayLowNote:" destination="fxG-yK-V5Z" eventType="touchDown" id="GKo-AW-Ua2"/>
-                                    <action selector="startPlayLowNote:" destination="fxG-yK-V5Z" eventType="touchDragEnter" id="Hop-8b-hRA"/>
-                                    <action selector="stopPlayLowNote:" destination="fxG-yK-V5Z" eventType="touchUpInside" id="Cer-dM-CUC"/>
-                                    <action selector="stopPlayLowNote:" destination="fxG-yK-V5Z" eventType="touchDragExit" id="RbZ-9u-1Jv"/>
+                                    <action selector="startPlayNote:" destination="fxG-yK-V5Z" eventType="touchDown" id="TI0-Hj-XrG"/>
+                                    <action selector="startPlayNote:" destination="fxG-yK-V5Z" eventType="touchDragEnter" id="icS-Xs-sPB"/>
+                                    <action selector="stopPlayNote:" destination="fxG-yK-V5Z" eventType="touchUpInside" id="1Xh-Hn-wEk"/>
+                                    <action selector="stopPlayNote:" destination="fxG-yK-V5Z" eventType="touchDragExit" id="X3P-DD-L4J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSz-bx-D32">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSz-bx-D32">
                                 <rect key="frame" x="115" y="348" width="90" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -193,13 +193,13 @@
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startPlayMidNote:" destination="fxG-yK-V5Z" eventType="touchDown" id="d3y-eK-4Av"/>
-                                    <action selector="startPlayMidNote:" destination="fxG-yK-V5Z" eventType="touchDragEnter" id="xh2-hJ-Gmw"/>
-                                    <action selector="stopPlayMidNote:" destination="fxG-yK-V5Z" eventType="touchDragExit" id="IKB-LC-C4w"/>
-                                    <action selector="stopPlayMidNote:" destination="fxG-yK-V5Z" eventType="touchUpInside" id="bs7-0F-5fN"/>
+                                    <action selector="startPlayNote:" destination="fxG-yK-V5Z" eventType="touchDown" id="6jh-2Y-zcZ"/>
+                                    <action selector="startPlayNote:" destination="fxG-yK-V5Z" eventType="touchDragEnter" id="8qO-ny-Jth"/>
+                                    <action selector="stopPlayNote:" destination="fxG-yK-V5Z" eventType="touchDragExit" id="kUx-wu-UxT"/>
+                                    <action selector="stopPlayNote:" destination="fxG-yK-V5Z" eventType="touchUpInside" id="vvr-qa-b6o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g1-Lv-uC0">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g1-Lv-uC0">
                                 <rect key="frame" x="210" y="348" width="90" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -208,10 +208,10 @@
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startPlayHighNote:" destination="fxG-yK-V5Z" eventType="touchDown" id="8y1-Zs-bQr"/>
-                                    <action selector="startPlayHighNote:" destination="fxG-yK-V5Z" eventType="touchDragEnter" id="zap-sc-IhX"/>
-                                    <action selector="stopPlayHighNote:" destination="fxG-yK-V5Z" eventType="touchUpInside" id="EXC-MW-WwX"/>
-                                    <action selector="stopPlayHighNote:" destination="fxG-yK-V5Z" eventType="touchDragExit" id="eOz-q5-bZW"/>
+                                    <action selector="startPlayNote:" destination="fxG-yK-V5Z" eventType="touchDown" id="G8R-S5-FII"/>
+                                    <action selector="startPlayNote:" destination="fxG-yK-V5Z" eventType="touchDragEnter" id="awf-Cy-PAY"/>
+                                    <action selector="stopPlayNote:" destination="fxG-yK-V5Z" eventType="touchDragExit" id="9n1-QF-5yM"/>
+                                    <action selector="stopPlayNote:" destination="fxG-yK-V5Z" eventType="touchUpInside" id="m08-iI-b45"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="hhI-fs-PjU">

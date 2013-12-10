@@ -16,12 +16,10 @@
 @property (readwrite) AudioUnit mixerUnit;
 @property (readwrite) AudioUnit ioUnit;
 
-//- (void)    registerForUIApplicationNotifications;
 - (BOOL)    createAUGraph;
 - (void)    configureAndStartAudioProcessingGraph: (AUGraph) graph;
 - (void)    load2SoundFonts;
-//- (void)    stopAudioProcessingGraph;
-//- (void)    restartAudioProcessingGraph;
+
 @end
 
 @implementation SCAudioController
@@ -130,7 +128,6 @@
     if (result != noErr) NSLog (@"Unable to open the audio processing graph. Error code: %d", (int) result);
 
     // Obtain the mixer unit instance from its corresponding node.
-    
     result =    AUGraphNodeInfo (
                                  self.processingGraph,
                                  mixerNode,
@@ -181,7 +178,6 @@
     
     return YES;
 }
-
 
 // With an instantiated audio processing graph, configure
 // audio units, initialize it, and start it.
@@ -335,7 +331,6 @@
 
 }
 
-
 // Set up the audio session for this app.
 - (BOOL) setupAudioSession {
     
@@ -366,6 +361,5 @@
     
     return YES;
 }
-
 
 @end
