@@ -15,8 +15,11 @@ Features:
 - Pitch adjustment on instrument 2 will not effect the note pitch of the notes on instrument 1 as instrument 1 does not go though the effects unit.  This you can demonstrate by playing notes with both bus 1 and 2 on while applying a pitch adjustment 
 - Multiple keyborad notes can be played at once
 
-licence info:
+Licence info:
 
 - The GeneralUser GS sound font is from [S. Christian Collins](http://www.schristiancollins.com/generaluser.php) where you will find his current licence
 
-My slide deck for the Dec 6th, 2013 'Intro To iOS Core Audio' presentation for the Cocoa Conspiracy here is on [Slide Share](http://www.slideshare.net/slideshow/embed_code/29184534)
+
+Presentation:
+
+- my slide deck for the Dec 6th, 2013 'Intro To iOS Core Audio' presentation for the Cocoa Conspiracy here is on [Slide Share](http://www.slideshare.net/slideshow/embed_code/29184534)
