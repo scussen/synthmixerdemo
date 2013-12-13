@@ -5,4 +5,4 @@ Core Audio demo example to show loading from a sound font, effects unit for pitc
 
 Here is a graphical representation in the AU Graph for the SynthMixDemo application:
 
-[AU Graph diagram](docs/AUGraph.png)
+[AU Graph diagram](AUGraph.png)
