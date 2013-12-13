@@ -1,7 +1,7 @@
 synthmixerdemo
 ==============
 
-The SynthMixDemo application is a Core Audio demonstration example to show loading from a sound font, effects unit for pitch adjustment and multi-channel mixer
+The SynthMixDemo application is a Core Audio demonstration example to show loading from a sound font, routing through an effects unit for pitch adjustment and mixing with a multi-channel mixer
 
 Here is a graphical representation in the AU Graph for the SynthMixDemo:
 
