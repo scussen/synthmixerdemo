@@ -18,3 +18,5 @@ Features:
 licence info:
 
 - The GeneralUser GS sound font is from [S. Christian Collins](http://www.schristiancollins.com/generaluser.php) where you will find his current licence
+
+My slide deck for the Dec 6th, 2013 'Intro To iOS Core Audio' presentation for the Cocoa Conspiracy is on [Slide Share](http://www.slideshare.net/slideshow/embed_code/29184534)
