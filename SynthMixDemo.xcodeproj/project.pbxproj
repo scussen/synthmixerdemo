@@ -60,6 +60,7 @@
 		4203823118515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GUGS_Fluid_v1_44.sf2; sourceTree = "<group>"; };
 		4203823318515F7F00EAA44C /* SCSynthMixerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSynthMixerViewController.h; sourceTree = "<group>"; };
 		4203823418515F7F00EAA44C /* SCSynthMixerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSynthMixerViewController.m; sourceTree = "<group>"; };
+		42D4F776185AB8360081BEB0 /* AUGraph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUGraph.png; sourceTree = "<group>"; };
 		42D660D61851ACA0004B23FF /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
 		42D660D81851ACA8004B23FF /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +92,7 @@
 		420381ED18515B8300EAA44C = {
 			isa = PBXGroup;
 			children = (
+				42D4F775185AB7FA0081BEB0 /* docs */,
 				420381FF18515B8300EAA44C /* SynthMixDemo */,
 				4203821E18515B8300EAA44C /* SynthMixDemoTests */,
 				420381F818515B8300EAA44C /* Frameworks */,
@@ -172,6 +174,14 @@
 				4203823118515ED800EAA44C /* GUGS_Fluid_v1_44.sf2 */,
 			);
 			name = "Sount Fonts";
+			sourceTree = "<group>";
+		};
+		42D4F775185AB7FA0081BEB0 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				42D4F776185AB8360081BEB0 /* AUGraph.png */,
+			);
+			name = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
