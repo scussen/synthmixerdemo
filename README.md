@@ -22,4 +22,4 @@ Licence info:
 
 Presentation:
 
-- my slide deck for the Dec 6th, 2013 'Intro To iOS Core Audio' presentation for the Cocoa Conspiracy here is on [Slide Share](http://www.slideshare.net/slideshow/embed_code/29184534)
+- My slide deck for the Dec 6th, 2013 'Intro To iOS Core Audio' presentation for the Cocoa Conspiracy here is on [Slide Share](http://www.slideshare.net/slideshow/embed_code/29184534)
