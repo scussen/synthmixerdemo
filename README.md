@@ -13,7 +13,7 @@ Features:
 - Each input bus independently selectable - either bu1 1, or bus 2, or both
 - Instrument 2 (bus 2) goes through an effects unit that has a ui slider for the pitch adjustment.  The pictch bend in this example is a 'semitone' (100 Cents) in either direction. So for the C note - the slider to full right will give a C# note and full left will give a B note.  Note that the full range of adjustment the pitch shift effect allows is two octaves in either direction (+/- 2400 Cents).
 - Pitch adjustment on instrument 2 will not effect the note pitch of the notes on instrument 1 as instrument 1 does not go though the effects unit.  This you can demonstrate by playing notes with both bus 1 and 2 on while applying a pitch adjustment 
-- Multiple keyborad notes can be played at once
+- Multiple keyboard notes can be played at once
 
 Licence info:
 
